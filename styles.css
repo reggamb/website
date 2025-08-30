@@ -1,0 +1,107 @@
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+       
+    }
+    
+    body {
+        margin: 0;
+        background-color: #ebbcce;
+        color: #5b3342;
+        font-family: 'Comfortaa', serif;
+        padding: 20px;
+    }
+    
+    .container {
+       display: flex;
+       flex-direction: row;
+       gap: 1rem;   
+    }   
+    
+    .header_img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border: 3px solid #c4458f;
+
+        
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 15%;
+        position: sticky;
+        background-color: #bce5dd;
+        border-left: 4px solid #2b7879;
+        padding: 0 10px
+    }
+
+    .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #5b3342;
+        display: flex;
+        margin: 0;  
+    }
+
+
+    .sidenav a:hover {
+        color: #406362;
+    }
+
+    .main {
+        margin-left: 200px; 
+    }
+
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+
+    .block-2 {
+        flex-grow: 8;
+        flex-basis: 0;
+    }
+ 
+    .area {
+        background-color: #FFE4F5;
+        padding: 1rem;
+        border-left: 4px solid #C36B8D;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .posthead {
+        align-self: center;
+    }
+        
+    .posth2 {
+        font-size: 26px;
+    }
+
+    .headers {
+        font-family: 'Comfortaa', serif;
+        padding-left: 0.5rem;
+        font-size: 30px;
+        line-height: 20px;
+        position: relative;
+        z-index: 1;
+
+    }
+    
+    .title {
+        padding-left: 0.5rem;
+        font-size: 40px;
+        line-height: 20px;
+        position: relative;
+        z-index: 1;
+        font-family: 'Comfortaa', serif;
+    }
+    
+
+    
+  
