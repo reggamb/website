@@ -1,107 +1,292 @@
 
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-       
-    }
-    
-    body {
-        margin: 0;
-        background-color: #ebbcce;
-        color: #5b3342;
-        font-family: 'Comfortaa', serif;
-        padding: 20px;
-    }
-    
-    .container {
-       display: flex;
-       flex-direction: row;
-       gap: 1rem;   
-    }   
-    
-    .header_img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        border: 3px solid #c4458f;
+   /* ------------------------------ */
+/*     THEME GENERAL CUTE 💗      */
+/* ------------------------------ */
 
-        
-    }
-    
-    .sidenav {
-        height: 100%;
-        width: 15%;
-        position: sticky;
-        background-color: #bce5dd;
-        border-left: 4px solid #2b7879;
-        padding: 0 10px
-    }
+body {
+    margin: 0;
+    padding: 0;
+    background: #e1c9e6;
+    font-family: "Comfortaa", sans-serif;
+    color: #444;
+    overflow-x: hidden;
+    cursor: url('cursor.png'), auto;
+}
 
-    .sidenav a {
-        padding: 6px 6px 6px 32px;
-        text-decoration: none;
-        font-size: 15px;
-        color: #5b3342;
-        display: flex;
-        margin: 0;  
-    }
+/* ------------------------------ */
+/*          STAR BACKGROUND ✨     */
+/* ------------------------------ */
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('cozycabin.gif');
+    background-size: cover;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+/* ------------------------------ */
+/*             HEADER ♡           */
+/* ------------------------------ */
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #f3cade;
+    border-bottom: 3px dashed #ffb6d9;
+}
+
+.title {
+    margin: 0;
+    font-size: 2.6em;
+    color: #ff74b4;
+}
+
+.header_img {
+    width: 130px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 2px dashed #ff80bf;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #ff8ac8;
+    margin-top: 5px;
+}
+
+/* ------------------------------ */
+/*           CONTAINER 🍓         */
+/* ------------------------------ */
+
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* ------------------------------ */
+/*             SIDEBAR 🌸         */
+/* ------------------------------ */
+
+.sidenav {
+    width: 260px;
+    background: #f7d9e8;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px dashed #ffc2e1;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.sidebox {
+    background: #ffffffdd;
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 2px dashed #ffd2eb;
+}
+
+.sidebox h3 {
+    color: #ff5ca8;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.navlinks a {
+    display: block;
+    padding: 9px;
+    margin: 7px 0;
+    background: #f4c3da;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #ff4d9e;
+    font-weight: bold;
+    text-align: center;
+    transition: transform .15s, background .15s;
+}
+
+.navlinks a:hover {
+    background: #ffd3ec;
+    transform: scale(1.05);
+}
+
+/* Blinkies y Stamps */
+
+.blinkies img {
+    width: 100%;
+    margin: 6px 0;
+    border-radius: 6px;
+}
+
+.counter {
+    text-align: center;
+    margin-top: 12px;
+    font-size: .9em;
+    color: #ff4fa7;
+}
+
+/* ------------------------------ */
+/*            MAIN AREA 🧸        */
+/* ------------------------------ */
+
+.main {
+    flex: 1;
+}
+
+.inline-link {
+  color: inherit;            
+  text-decoration: none;     
+  border-bottom: 1px dotted currentColor; 
+}
+.inline-link:focus { outline: 2px solid HotPink; }
+
+.area {
+    background: #ffffff;
+    border: 2px dashed #ffc6e7;
+    border-radius: 22px;
+    padding: 20px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 10px #ffbde88a;
+}
+
+.posth2 {
+    margin: 0;
+    color: #ff66ad;
+    font-size: 1.6em;
+}
+
+.postcontent {
+    margin-top: 10px;
+    line-height: 1.7;
+    color: #444;
+    font-size: 1.05em;
+}
+
+.area ul {
+    list-style: "✿  ";
+}
+
+/* ------------------------------ */
+/*        PIXEL ART GALLERY 🐰       */
+/* ------------------------------ */
+
+.pixel-art-single {
+  text-align: center;
+  margin: 18px 0;
+}
+
+.pixel-img {
+  max-width: 320px;
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid rgba(255,180,210,0.6);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.caption {
+  margin: 8px 0 4px;
+  color: #a6367a;
+  font-weight: 600;
+}
+
+/* Galería */
+.pixel-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.pixel-card {
+  background: rgba(255,250,255,0.8);
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px dashed rgba(255,150,200,0.35);
+  text-align: center;
+}
+
+.pixel-thumb {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  image-rendering: pixelated; /* para mantener look pixel art */
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.pixel-card figcaption {
+  font-size: 0.95rem;
+  color: #8b2f66;
+}
+
+/* ------------------------------ */
+/*        FLOATING CHIBI 🐰       */
+/* ------------------------------ */
+
+.floating-chibi {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    animation: floaty 3.5s ease-in-out infinite;
+}
+
+.floating-chibi img {
+    width: 120px;
+}
+
+.chibi-area {
+    position: relative;
+    display: inline-block;
+}
+
+.chibi {
+    width: 180px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.chibi:hover {
+    transform: scale(1.05);
+}
+
+.gift {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 245, 250, 0.9);
+    border: 2px solid #ffb6d9;
+    padding: 12px 16px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    width: 150px;
+    animation: pop 0.25s ease;
+}
+
+.gift-img {
+    width: 70px;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+@keyframes pop {
+    0% { transform: translateX(-50%) scale(0.4); opacity: 0; }
+    100% { transform: translateX(-50%) scale(1); opacity: 1; }
+}
 
 
-    .sidenav a:hover {
-        color: #406362;
-    }
-
-    .main {
-        margin-left: 200px; 
-    }
-
-        @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
-    }
-
-    .block-2 {
-        flex-grow: 8;
-        flex-basis: 0;
-    }
- 
-    .area {
-        background-color: #FFE4F5;
-        padding: 1rem;
-        border-left: 4px solid #C36B8D;
-        display: flex;
-        flex-direction: column;
-        row-gap: 1rem;
-    }
-
-    .posthead {
-        align-self: center;
-    }
-        
-    .posth2 {
-        font-size: 26px;
-    }
-
-    .headers {
-        font-family: 'Comfortaa', serif;
-        padding-left: 0.5rem;
-        font-size: 30px;
-        line-height: 20px;
-        position: relative;
-        z-index: 1;
-
-    }
-    
-    .title {
-        padding-left: 0.5rem;
-        font-size: 40px;
-        line-height: 20px;
-        position: relative;
-        z-index: 1;
-        font-family: 'Comfortaa', serif;
-    }
-    
-
-    
-  
+@keyframes floaty {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
