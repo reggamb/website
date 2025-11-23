@@ -279,6 +279,362 @@ header {
     margin: 0 auto 5px;
 }
 
+/*------------------------------ */
+/*         MOD GALLERY✨          */
+/*------------------------------ */
+
+.header-cute {
+    text-align: center;
+    padding: 20px;
+    color: #ffe6f5;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.mod-card {
+    background: #2c1f2f;
+    border: 2px solid #ffb6da;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.15s ease;
+}
+
+.mod-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mod-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ffd8f2;
+}
+
+.mod-card:hover {
+    transform: scale(1.05);
+    border-color: #ffd0eb;
+}
+
+/* ------------------------------ */
+/*          MOD PAGE STYLES ✨      */ 
+
+/* Título de actualizaciones */
+.updates-title {
+    font-size: 22px;
+    color: #ffe6f9;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de posts */
+.updates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Cada post */
+.update-post {
+    background: #2c1d2e;
+    border: 2px solid #ffb6da;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: left;
+    transition: transform 0.15s ease;
+}
+
+/* Hover suave */
+.update-post:hover {
+    transform: translateY(-3px);
+    border-color: #ffd0eb;
+}
+
+/* Fecha */
+.update-date {
+    font-size: 13px;
+    opacity: 0.7;
+    margin: 0;
+}
+
+/* Título del post */
+.update-header {
+    color: #ffd8f2;
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+/* Texto */
+.update-text {
+    color: #ffe5f7;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+.back-btn {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    color: #bc3076;
+    font-size: 14px;
+}
+
+.mod-container {
+    max-width: 720px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.mod-title {
+    color: #ffe6f9;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.mod-preview {
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid #ffbde6;
+    margin-bottom: 20px;
+}
+
+.mod-description {
+    color: #ffe5f7;
+    background: #2c1f2f;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #ffb6da;
+    line-height: 1.6;
+}
+
+.update-image {
+    width: auto;
+    border-radius: 8px;
+    margin-top: 12px;
+    border: 2px solid #ffbde6;
+    margin-left: 30px;
+}
+
+/* SECTION */
+.contact-section {
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.section-title {
+    text-align: center;
+    color: #ffd8f0;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/* GRID */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 20px;
+}
+
+@media (max-width: 750px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CARD STYLES */
+.card {
+    background: #2b1d2f;
+    border: 2px solid #ffb6da;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.card-light {
+    background: linear-gradient(180deg, #ffeef7, #fff6fb);
+    border-radius: 14px;
+    padding: 16px;
+    color: #4a3750;
+    border: 2px solid #ffb6da;
+}
+
+/* TEXTAREA */
+.contact-form textarea {
+    width: 95%;
+    height: 160px;
+    resize: vertical;
+    border: 2px solid #ffb6da;
+    border-radius: 10px;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 14px;
+    background: #3a2b3f;
+    color: #ffe7f6;
+}
+
+.contact-form textarea::placeholder {
+    color: #e9c5d8;
+}
+
+/* BUTTON */
+.btn-send {
+    margin-top: 10px;
+    background: #ffb6da;
+    color: #40283c;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-send:hover {
+    background: #ffd2eb;
+    transform: scale(1.05);
+}
+
+/* CONTACT INFO */
+.contact-info p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: #d64b9c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Feedback text */
+.feedback {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #ffcae5;
+}
+
+/* BLOG */
+/* PAGE TITLE */
+.page-title {
+    text-align: center;
+    color: #ffd7f1;
+    font-size: 28px;
+    margin: 25px 0;
+}
+
+/* BLOG GRID */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* BLOG CARD */
+.blog-card {
+    background: #2b1d2f;
+    border: 2px solid #ffb6da;
+    border-radius: 14px;
+    padding: 16px;
+    text-decoration: none;
+    color: #ffe7f6;
+    transition: transform 0.15s ease, border-color 0.15s;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+    border-color: #ffd2eb;
+}
+
+.blog-thumb {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-card-title {
+    font-size: 20px;
+    color: #ffd7f1;
+}
+
+.blog-card-date {
+    font-size: 13px;
+    opacity: 0.75;
+    margin: 4px 0;
+}
+
+.blog-card-desc {
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+/* POST PAGE */
+.post-container {
+    max-width: 760px;
+    margin: auto;
+    padding: 20px;
+}
+
+.post-title {
+    text-align: center;
+    color: #ffd7f1;
+    margin-bottom: 4px;
+}
+
+.post-date {
+    text-align: center;
+    opacity: 0.75;
+    margin-bottom: 18px;
+}
+
+.post-banner {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.post-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    color: #ffe7f6;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0 20px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    display: inline-block;
+    margin: 20px;
+    color: #b9206c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+
 @keyframes pop {
     0% { transform: translateX(-50%) scale(0.4); opacity: 0; }
     100% { transform: translateX(-50%) scale(1); opacity: 1; }
