@@ -6,11 +6,15 @@
 body {
     margin: 0;
     padding: 0;
-    background: #e1c9e6;
-    font-family: "Comfortaa", sans-serif;
+    background: #e2e1c0;
+    font-family: "Patrick Hand", sans-serif;
     color: #444;
     overflow-x: hidden;
     cursor: url('cursor.png'), auto;
+}
+
+ul {
+    color: #a6367a ;
 }
 
 /* ------------------------------ */
@@ -36,14 +40,14 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background: #f3cade;
+    background: #e2e1c0;
     border-bottom: 3px dashed #ffb6d9;
 }
 
 .title {
     margin: 0;
     font-size: 2.6em;
-    color: #ff74b4;
+    color: #e69730;
 }
 
 .header_img {
@@ -55,7 +59,7 @@ header {
 
 .subtitle {
     font-size: 1.1em;
-    color: #ff8ac8;
+    color: #e69730;
     margin-top: 5px;
 }
 
@@ -75,7 +79,7 @@ header {
 
 .sidenav {
     width: 260px;
-    background: #f7d9e8;
+    background: #e2e1c0;
     padding: 15px;
     border-radius: 20px;
     border: 2px dashed #ffc2e1;
@@ -85,7 +89,7 @@ header {
 }
 
 .sidebox {
-    background: #ffffffdd;
+    background: #eddd76dd;
     padding: 12px;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -93,7 +97,7 @@ header {
 }
 
 .sidebox h3 {
-    color: #ff5ca8;
+    color: #e69730;
     text-align: center;
     margin: 0 0 10px 0;
 }
@@ -102,17 +106,17 @@ header {
     display: block;
     padding: 9px;
     margin: 7px 0;
-    background: #f4c3da;
+    background: #eddd76dd;
     border-radius: 14px;
     text-decoration: none;
-    color: #ff4d9e;
+    color: #e69730;
     font-weight: bold;
     text-align: center;
     transition: transform .15s, background .15s;
 }
 
 .navlinks a:hover {
-    background: #ffd3ec;
+    background: #eddd76dd;
     transform: scale(1.05);
 }
 
@@ -128,7 +132,7 @@ header {
     text-align: center;
     margin-top: 12px;
     font-size: .9em;
-    color: #ff4fa7;
+    color: #e69730;
 }
 
 /* ------------------------------ */
@@ -147,8 +151,8 @@ header {
 .inline-link:focus { outline: 2px solid HotPink; }
 
 .area {
-    background: #ffffff;
-    border: 2px dashed #ffc6e7;
+    background: #eddd76dd;
+    border: 2px dashed #ffd2eb;
     border-radius: 22px;
     padding: 20px;
     margin-bottom: 22px;
@@ -157,7 +161,7 @@ header {
 
 .posth2 {
     margin: 0;
-    color: #ff66ad;
+    color: #e69730;
     font-size: 1.6em;
 }
 
@@ -333,7 +337,7 @@ header {
 /* Título de actualizaciones */
 .updates-title {
     font-size: 22px;
-    color: #ffe6f9;
+    color: #e69730;
     margin-top: 40px;
     margin-bottom: 10px;
 }
@@ -366,6 +370,7 @@ header {
     font-size: 13px;
     opacity: 0.7;
     margin: 0;
+    color: #ffbde6;
 }
 
 /* Título del post */
@@ -387,7 +392,7 @@ header {
     display: inline-block;
     margin: 20px;
     text-decoration: none;
-    color: #bc3076;
+    color: #e69730;
     font-size: 14px;
 }
 
@@ -399,7 +404,7 @@ header {
 }
 
 .mod-title {
-    color: #ffe6f9;
+    color: #e69730;
     font-size: 28px;
     margin-bottom: 10px;
 }
@@ -436,7 +441,7 @@ header {
 
 .section-title {
     text-align: center;
-    color: #ffd8f0;
+    color: #e69730;
     font-size: 26px;
     margin-bottom: 25px;
 }
@@ -491,7 +496,7 @@ header {
 /* BUTTON */
 .btn-send {
     margin-top: 10px;
-    background: #ffb6da;
+    background: #a6367a;
     color: #40283c;
     padding: 10px 20px;
     border-radius: 10px;
@@ -502,7 +507,7 @@ header {
 }
 
 .btn-send:hover {
-    background: #ffd2eb;
+    background: #eddd76dd;
     transform: scale(1.05);
 }
 
@@ -513,7 +518,7 @@ header {
 }
 
 .contact-info a {
-    color: #d64b9c;
+    color: #e69730;
     text-decoration: none;
 }
 
@@ -532,7 +537,7 @@ header {
 /* PAGE TITLE */
 .page-title {
     text-align: center;
-    color: #ffd7f1;
+    color: #e69730;
     font-size: 28px;
     margin: 25px 0;
 }
@@ -592,7 +597,7 @@ header {
 
 .post-title {
     text-align: center;
-    color: #ffd7f1;
+    color: #a6367a;
     margin-bottom: 4px;
 }
 
@@ -612,7 +617,7 @@ header {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 14px;
-    color: #ffe7f6;
+    color: #a6367a;
 }
 
 .post-img {
@@ -625,7 +630,7 @@ header {
 .back-btn {
     display: inline-block;
     margin: 20px;
-    color: #b9206c;
+    color: #e69730;
     text-decoration: none;
     font-size: 14px;
 }

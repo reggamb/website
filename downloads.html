@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Downloads</title>
+
+<style>
+    body {
+        font-family: "Patrick Hand", cursive;
+        background: #fff6fd;
+        color: #7b5c83;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+
+    /* 🌸 Contenido principal */
+    .main-content {
+        margin-left: 100px;
+        padding: 20px;
+        width: calc(100% - 240px);
+    }
+
+    header {
+        background: linear-gradient(135deg, #ffd6e8, #ffeaf6);
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+        border: 4px solid #f8bfdc;
+        box-shadow: 0 0 12px #ffc7e5;
+    }
+
+    header h1 {
+        margin: 0;
+        color: #b05f86;
+        font-size: 2.3rem;
+        text-shadow: 2px 2px #ffffff;
+    }
+
+  .back-btn {
+    font-family: "Patrick Hand", cursive;
+    background: #ffd6e8;
+    border: 2px solid #ffb4d9;
+    padding: 10px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #a25578;
+    box-shadow: 0 0 8px #ffcbe5;
+    transition: 0.15s ease;
+    margin-bottom: 20px;
+}
+
+.back-btn:hover {
+    transform: scale(1.07);
+    background: #ffb4d9;
+    color: white;
+}
+   
+
+    /* 🌸 Buscador */
+    .search-box {
+        margin: 25px auto;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .search-box input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 15px;
+        border: 2px solid #ffbcd8;
+        box-shadow: 0 0 10px #ffd9ec;
+        font-size: 1rem;
+    }
+
+    /* 🌸 Tarjetas de descarga */
+    .download-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 0 12px #ffd3eb;
+        border: 2px solid #fdd7ef;
+    }
+
+    .download-card h2 {
+        margin-top: 0;
+        color: #b05f86;
+        font-size: 1.6rem;
+    }
+
+    .tags {
+        margin: 10px 0;
+    }
+
+    .tag {
+        display: inline-block;
+        background: #ffe1f3;
+        padding: 5px 10px;
+        border-radius: 12px;
+        margin-right: 5px;
+        font-size: 0.8rem;
+        color: #b05f86;
+        border: 1px solid #f7b9d7;
+    }
+
+    .desc {
+        font-size: 0.95rem;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
+    .download-btn {
+        display: inline-block;
+        margin-top: 15px;
+        background: #ffb9d9;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 15px;
+        text-decoration: none;
+        font-size: 1rem;
+        border: 2px solid #ff92c9;
+        box-shadow: 0 0 8px #ffc2e5;
+        transition: 0.15s;
+    }
+
+    .download-btn:hover {
+        transform: scale(1.05);
+        background: #ff92c9;
+    }
+
+    /* 🌸 Paginación */
+    .pagination {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .pagination button {
+        background: #ffd6e8;
+        border: 2px solid #ffb4d9;
+        padding: 10px 15px;
+        border-radius: 12px;
+        margin: 3px;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #a25578;
+        transition: 0.2s;
+    }
+
+    .pagination button.active {
+        background: #ffb4d9;
+        color: white;
+    }
+
+    .pagination button:hover {
+        transform: scale(1.1);
+    }
+</style>
+</head>
+
+<body>
+
+<!-- 🌸 CONTENIDO PRINCIPAL -->
+<div class="main-content">
+
+    <button onclick="history.back()" class="back-btn">⬅ Back</button>
+
+
+    <header>
+        <h1>Downloads</h1>
+    </header>
+
+    <!-- 🌸 BUSCADOR -->
+    <div class="search-box">
+        <input id="searchInput" type="text" placeholder="Search">
+    </div>
+
+    <p>This is a work in progress. I'm planning to upload a variety of creations for Sims 2 and Sims 3, maybe Sims 4 too. Stay tuned!</p>
+
+    <div id="cardsContainer">
+
+        <!-- 🌸 TARJETA 1 -->
+         <!-- 
+        <div class="download-card" data-title="blinkies rosita pastel">
+            <h2>✨ Pack de Blinkies Rosita Pastel</h2>
+
+            <div class="tags">
+                <span class="tag">PNG</span>
+                <span class="tag">Blinkies</span>
+                <span class="tag">Kawaii</span>
+            </div>
+
+            <p class="desc">
+                Un pack de 20 blinkies super cute hechos con amor, perfectos para tu web o perfil.  
+                Colores pastel, corazoncitos y estrellitas ✨💖.
+            </p>
+
+            <a class="download-btn" href="#">Download</a>
+        </div>
+
+    -->
+
+        <!-- 🌸 TARJETA 2 -->
+            <!--
+        <div class="download-card" data-title="stamps y2k set retro">
+            <h2>🌟 Stamps Estilo Y2K – Set 01</h2>
+
+            <div class="tags">
+                <span class="tag">GIF</span>
+                <span class="tag">Stamps</span>
+                <span class="tag">Retro</span>
+            </div>
+
+            <p class="desc">
+                Stamps animados estilo early 2000s: estrellas, layouts retro y vibes del internet viejo ✨.
+            </p>
+
+            <a class="download-btn" href="#">Download</a>
+        </div>
+
+    -->
+
+        <!-- 🌸 TARJETA 3 (ejemplo) -->
+         <!-- 
+        <div class="download-card" data-title="cursor cute set">
+            <h2>🌸 Pack de Cursores Cute</h2>
+
+            <div class="tags">
+                <span class="tag">CUR</span>
+                <span class="tag">Cursor</span>
+                <span class="tag">Pink</span>
+            </div>
+
+            <p class="desc">
+                Un set de cursores con estrellitas, moñitos y detalles lindos para decorar tu PC 💕.
+            </p>
+
+            <a class="download-btn" href="#">Descargar 💾</a>
+        </div>
+
+    </div>
+
+-->
+
+    <!-- 🌸 PAGINACIÓN -->
+    <div class="pagination" id="pagination"></div>
+
+</div>
+
+<script>
+/* 💕 BUSCADOR */
+document.getElementById("searchInput").addEventListener("keyup", function() {
+    let filter = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".download-card");
+
+    cards.forEach(card => {
+        let title = card.getAttribute("data-title");
+        card.style.display = title.includes(filter) ? "" : "none";
+    });
+});
+
+/* 💕 PAGINACIÓN */
+const cardsPerPage = 2;
+let currentPage = 1;
+
+function showPage(page) {
+    const cards = document.querySelectorAll(".download-card");
+    const totalPages = Math.ceil(cards.length / cardsPerPage);
+
+    cards.forEach((card, index) => {
+        card.style.display = (index >= (page - 1) * cardsPerPage && index < page * cardsPerPage) 
+            ? "" 
+            : "none";
+    });
+
+    let pagination = document.getElementById("pagination");
+    pagination.innerHTML = "";
+
+    for (let i = 1; i <= totalPages; i++) {
+        let btn = document.createElement("button");
+        btn.innerText = i;
+        if (i === page) btn.classList.add("active");
+        btn.onclick = () => {
+            currentPage = i;
+            showPage(i);
+        };
+        pagination.appendChild(btn);
+    }
+}
+
+showPage(currentPage);
+</script>
+
+</body>
+</html>
